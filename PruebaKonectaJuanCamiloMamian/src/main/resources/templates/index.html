@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Productos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Gestión de Productos Cafe-Konecta</h1>
+        <a th:href="@{/agregarProducto}">Almacenar Producto</a>
+        <br/><br/>
+        <div th:if="${productos != null and !productos.empty}">
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Nombre del Producto</th>
+                        <th>Referencia</th>
+                        <th>Precio</th>
+                        <th>Peso</th>
+                        <th>Categoría</th>
+                        <th>Stock</th>
+                        <th>Fecha de Creación</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="producto : ${productos}">
+                        <td th:text="${producto.nombreProducto}"></td>
+                        <td th:text="${producto.referencia}"></td>
+                        <td th:text="${producto.precio}"></td>
+                        <td th:text="${producto.peso}"></td>
+                        <td th:text="${producto.categoria}"></td>
+                        <td th:text="${producto.stock}"></td>
+                        <td th:text="${producto.fechaCreacion}"></td>
+                        <td><a th:href="@{/editarProducto(idProducto=${producto.idProducto})}">Editar Producto</a></td>
+                        <td><a th:href="@{/eliminarProducto(idProducto=${producto.idProducto})}">Eliminar Producto</a></td>
+                        <td><a th:href="@{/comprarProducto(idProducto=${producto.idProducto})}" >Comprar Producto</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

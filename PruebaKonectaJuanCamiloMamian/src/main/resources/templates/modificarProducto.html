@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Almacenar Producto</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Almacenar Producto</h1>
+        <a th:href="@{/}">Regresar al Inicio</a>
+        <br/><br/>
+        <form name="formAgregarProducto" th:action="@{/guardarProducto}" method="POST" th:object="${producto}">
+            
+            <input type="hidden" name="idProducto" th:field="*{idProducto}"/>
+            
+            <label for="nombreProducto">Nombre del Producto:</label>
+            <input type="text" name="nombreProducto" th:field="*{nombreProducto}"/>
+            <span th:if="${#fields.hasErrors('nombreProducto')}" th:errors='*{nombreProducto}'>Error nombreProducto</span>
+            <br/><br/>
+            
+            <label for="referencia">Referencia del Producto:</label>
+            <input type="text" name="referencia" th:field="*{referencia}"/>
+            <span th:if="${#fields.hasErrors('referencia')}" th:errors='*{referencia}'>Error referencia</span>
+            <br/><br/>
+            
+            <label for="precio">Precio del Producto:</label>
+            <input type="text" name="precio" th:field="*{precio}"/>
+            <span th:if="${#fields.hasErrors('precio')}" th:errors='*{precio}'>Error precio</span>
+            <br/><br/>
+            
+            <label for="peso">Peso del Producto:</label>
+            <input type="text" name="peso" th:field="*{peso}"/>
+            <span th:if="${#fields.hasErrors('peso')}" th:errors='*{peso}'>Error peso</span>
+            <br/><br/>
+            
+            <label for="categoria">Categoría del Producto:</label>
+            <input type="text" name="categoria" th:field="*{categoria}"/>
+            <span th:if="${#fields.hasErrors('categoria')}" th:errors='*{categoria}'>Error Categoría</span>
+            <br/><br/>
+            
+            <label for="stock">Cantidad del Producto:</label>
+            <input type="text" name="stock" th:field="*{stock}"/>
+            <span th:if="${#fields.hasErrors('stock')}" th:errors='*{stock}'>Error Catidad</span>
+            <br/><br/>
+            
+            <label for="fechaCreacion">Fecha de Creación del Producto:</label>
+            <input type="text" id="fechaCreacion" th:field="*{fechaCreacion}"/>
+            <span th:if="${#fields.hasErrors('fechaCreacion')}" th:errors='*{fechaCreacion}'>Error fechaCreacion</span>
+            <br/><br/>
+            <script type="text/javascript">
+                document.getElementById("fechaCreacion").value = new Date().toISOString().slice(0, 10);
+            </script>
+
+            <input type="submit" value="Almacenar Producto" name="almacenar"/>
+            
+        </form>
+    </body>
+</html>

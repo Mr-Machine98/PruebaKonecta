@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html  xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Venta de Productos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Compra Productos</h1>
+        <a th:href="@{/}">Regresar al Inicio</a>
+        <br/><br/>
+        <h2>Características de la Compra</h2>
+        <strong>Nombre del producto: </strong> <span th:utext="${producto.nombreProducto}"></span>
+        <br/>
+        <strong>ID: </strong> <span th:utext="${producto.idProducto}"></span>
+        <br/>
+        <strong>Cantidad en Stock: </strong> <span th:utext="${producto.stock}"></span>
+        <br/><br/>
+        <div th:if="${producto.stock == 0}">
+            <script> alert("No se puede realizar la compra, insuficientes productos...");</script>
+            <strong style="color: red">Insuficientes productos.</strong>
+        </div>
+        <div th:if="${producto.stock != 0}">
+            <form name="formAgregarProducto" th:action="@{/realizarCompraProducto}" method="POST" th:object="${producto}">
+                <input type="hidden" name="nombreProducto" th:field="*{nombreProducto}"/>
+                <input type="hidden" name="idProducto" th:field="*{idProducto}"/>
+                <input type="hidden" name="referencia" th:field="*{referencia}"/>
+                <input type="hidden" name="precio" th:field="*{precio}"/>
+                <input type="hidden" name="peso" th:field="*{peso}"/>
+                <input type="hidden" name="categoria" th:field="*{categoria}"/>
+                <input type="hidden" name="fechaCreacion" th:field="*{fechaCreacion}"/>
+                <input type="hidden" name="stock" th:field="*{stock}"/>
+                <input type="submit" value="Comprar" name="comprarProducto"/>
+            </form>
+        </div>
+    </body>
+</html>
