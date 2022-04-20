@@ -20,6 +20,31 @@ Como es un proyecto de springboot, la instalacion es sencilla, es solo arrancar 
 > ![LISTAR](https://github.com/Mr-Machine98/PruebaKonecta/blob/main/listar2.PNG)
 -------------------------------------------------------------
 > Editar el producto Presionandole en **Editar Producto** nos carga el producto para modificarlo.
+> 
 > ![LISTAR](https://github.com/Mr-Machine98/PruebaKonecta/blob/main/modificar.PNG)
 > ![LISTAR](https://github.com/Mr-Machine98/PruebaKonecta/blob/main/Listar3.PNG)
 -------------------------------------------------------------
+> Para eliminar el producto solo presionames en eliminar producto y se elimina el producto
+> 
+> ![LISTAR](https://github.com/Mr-Machine98/PruebaKonecta/blob/main/eliminar1.PNG)
+> ![LISTAR](https://github.com/Mr-Machine98/PruebaKonecta/blob/main/eliminar2.PNG)
+-------------------------------------------------------------
+> Demos clic en un registro que no tiene stock, saldra' un msm de localhost diciendo que no hay productos y luego marcara en rojo que no hay disponibilidad
+> 
+> ![LISTAR](https://github.com/Mr-Machine98/PruebaKonecta/blob/main/comprarProducto.PNG)
+> ![LISTAR](https://github.com/Mr-Machine98/PruebaKonecta/blob/main/ComprarProducto2.PNG)
+> ![LISTAR](https://github.com/Mr-Machine98/PruebaKonecta/blob/main/comprarProducto3.PNG
+> 
+> Ahora seleccionemos un registro que si tiene stock, se mostrara' de la siguiente manera, por ejemplo, escojamos el primero de la lista que tiene stock en 4 y observe como se modifica a estado 3: 
+> 
+> ![LISTAR](https://github.com/Mr-Machine98/PruebaKonecta/blob/main/comprarProducto4.PNG)
+> ![LISTAR](https://github.com/Mr-Machine98/PruebaKonecta/blob/main/comprarProducto5.PNG)
+-------------------------------------------------------------
+> Cada vez que se compra se alamacena en la tabla de ventas un producto comprado:
+> ![LISTAR](https://github.com/Mr-Machine98/PruebaKonecta/blob/main/registroVentas.PNG)
+> 
+> Estos son los querys directos a la bd para elu'ltimo punto:
+> > Realizar una consulta que permita conocer cuál es el producto que más stock tiene:
+> > > select nombre_producto , max(stock) as producto_con_mas_stock from productos;
+> > Realizar una consulta que permita conocer cuál es el producto más vendido:
+> > > SELECT producto_vendido, COUNT(*) AS veces, IF (COUNT(*)>1,"duplicado", "no duplicado") AS duplicacion FROM ventas GROUP BY producto_vendido;
