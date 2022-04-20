@@ -10,5 +10,6 @@ Como es un proyecto de springboot, la instalacion es sencilla, es solo arrancar 
 
 ## A CONTINUACIO'N MUESTRO CON IMA'GENES EL FUNCIONAMIENTO DEL PROYECTO
 -------------------------------------------------------------
-> 
+> Asi' luce cuando arrancas el proyecto y lista los productos de la bd
+> >> ![LISTAR](https://github.com/Mr-Machine98/PruebaKonecta/blob/main/listarProductos.PNG)
 -------------------------------------------------------------
