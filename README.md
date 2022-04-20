@@ -15,5 +15,5 @@ Como es un proyecto de springboot, la instalacion es sencilla, es solo arrancar 
 -------------------------------------------------------------
 > Cuando se agrega un nuevo producto presionando en **almacenar producto** y luego se lista en el inicio
 > ![LISTAR](https://github.com/Mr-Machine98/PruebaKonecta/blob/main/AgregandoProd.PNG)
-> ![LISTAR](https://https://github.com/Mr-Machine98/PruebaKonecta/blob/main/listar2.PNG)
+> ![LISTAR](https://github.com/Mr-Machine98/PruebaKonecta/blob/main/listar2.PNG)
 -------------------------------------------------------------
