@@ -8,7 +8,7 @@ Como es un proyecto de springboot, la instalacion es sencilla, es solo arrancar 
 - Igualmente la configuracio'n para la conexio'n de la bd esta en el archivo application.propperties.
 - el script de la copia de la base de datos vienen aqui en el repositorio con nombre **bd_konecta_prueba**
 
-# A CONTINUACIO'N MUESTRO CON IMA'GENES EL FUNCIONAMIENTO DEL PROYECTO
+## A CONTINUACIO'N MUESTRO CON IMA'GENES EL FUNCIONAMIENTO DEL PROYECTO
 -------------------------------------------------------------
 > 
 -------------------------------------------------------------
