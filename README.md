@@ -33,7 +33,7 @@ Como es un proyecto de springboot, la instalacion es sencilla, es solo arrancar 
 > 
 > ![LISTAR](https://github.com/Mr-Machine98/PruebaKonecta/blob/main/comprarProducto.PNG)
 > ![LISTAR](https://github.com/Mr-Machine98/PruebaKonecta/blob/main/ComprarProducto2.PNG)
-> ![LISTAR](https://github.com/Mr-Machine98/PruebaKonecta/blob/main/comprarProducto3.PNG
+> ![LISTAR](https://github.com/Mr-Machine98/PruebaKonecta/blob/main/comprarProducto3.PNG)
 > 
 > Ahora seleccionemos un registro que si tiene stock, se mostrara' de la siguiente manera, por ejemplo, escojamos el primero de la lista que tiene stock en 4 y observe como se modifica a estado 3: 
 > 
