@@ -11,9 +11,15 @@ Como es un proyecto de springboot, la instalacion es sencilla, es solo arrancar 
 ## A CONTINUACIO'N MUESTRO CON IMA'GENES EL FUNCIONAMIENTO DEL PROYECTO
 -------------------------------------------------------------
 > Asi' luce cuando arrancas el proyecto y lista los productos de la bd
+> 
 > ![LISTAR](https://github.com/Mr-Machine98/PruebaKonecta/blob/main/listarProductos.PNG)
 -------------------------------------------------------------
 > Cuando se agrega un nuevo producto presionando en **almacenar producto** y luego se lista en el inicio
+> 
 > ![LISTAR](https://github.com/Mr-Machine98/PruebaKonecta/blob/main/AgregandoProd.PNG)
 > ![LISTAR](https://github.com/Mr-Machine98/PruebaKonecta/blob/main/listar2.PNG)
+-------------------------------------------------------------
+> Editar el producto Presionandole en **Editar Producto** nos carga el producto para modificarlo.
+> ![LISTAR](https://github.com/Mr-Machine98/PruebaKonecta/blob/main/modificar.PNG)
+> ![LISTAR](https://github.com/Mr-Machine98/PruebaKonecta/blob/main/Listar3.PNG)
 -------------------------------------------------------------
