@@ -6,7 +6,8 @@ Cordial saludo, aqui hago entrega del proyecto con los requerimientos solicitado
 Como es un proyecto de springboot, la instalacion es sencilla, es solo arrancar en su entorno favorito el proyecto ya que fue creado con el springboot initializer ,por defecto usa maven, asi' que todas las dependecias vendran en el archivo .POM del proyecto, basta con hacerle cLean and build y el decargara todas las dependencias que necesitara'.
 
 - Igualmente la configuracio'n para la conexio'n de la bd esta en el archivo application.propperties.
-- el script de la copia de la base de datos vienen aqui en el repositorio con nombre **bd_konecta_prueba**
+- El script de la copia de la base de datos vienen aqui en el repositorio con nombre **bd_konecta_prueba**.
+- Los querys solicitados estan al final del de este readme.
 
 ## A CONTINUACIO'N MUESTRO CON IMA'GENES EL FUNCIONAMIENTO DEL PROYECTO
 -------------------------------------------------------------
