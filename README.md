@@ -46,5 +46,7 @@ Como es un proyecto de springboot, la instalacion es sencilla, es solo arrancar 
 > Estos son los querys directos a la bd para elu'ltimo punto:
 > > Realizar una consulta que permita conocer cuál es el producto que más stock tiene:
 > > > select nombre_producto , max(stock) as producto_con_mas_stock from productos;
+> > 
 > > Realizar una consulta que permita conocer cuál es el producto más vendido:
+> > 
 > > > SELECT producto_vendido, COUNT(*) AS veces, IF (COUNT(*)>1,"duplicado", "no duplicado") AS duplicacion FROM ventas GROUP BY producto_vendido;
